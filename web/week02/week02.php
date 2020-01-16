@@ -12,7 +12,7 @@
        getTime();
        function getTime()
        {
-        date_default_timezone_set("America/Idaho");
+        date_default_timezone_set("America/Mountain Standard Time");
         echo "The time is " . date("h:i:sa");
        };   
 ?>
