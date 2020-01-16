@@ -12,7 +12,8 @@
        getTime();
        function getTime()
        {
-        date_default_timezone_set("America/Mountain Standard Time");
+        echo "Today is " . date("Y/m/d") . "<br>";
+        date_default_timezone_set("America/Denver");
         echo "The time is " . date("h:i:sa");
        };   
 ?>
