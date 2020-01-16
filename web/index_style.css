@@ -1,0 +1,25 @@
+body{
+    background-color: lightskyblue;
+    color: white;
+    text-align: center;
+}
+
+header{
+    background-color: navy;
+}
+
+a:link, a:visited {
+    background-color: white;
+    color: navy;
+    padding: 10px 20px;
+    border: solid navy;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px;
+  }
+  
+  a:hover, a:active {
+    background-color: navy;
+    color: white;
+  }

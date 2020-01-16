@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(177, 220, 247);
+}
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("lily.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(177, 220, 247)
+  }
+  
+  .text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: rgb(177, 175, 175);
+    color: white;
+  }
+
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .sidebar a.active {
+    background-color: rgb(1, 97, 121);
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: rgb(167, 164, 164);
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+
+  img{
+      margin-left: 35%;
+      width: 300px;
+      height: auto;
+  }
+
+  p{
+      color: rgb(1, 97, 121);
+      font-size: 20px;
+      margin-left: 15%;
+  }
+
+  footer{
+      background-color: rgb(1, 97, 121);
+      color: rgb(177, 220, 247);
+      text-align: center;
+  }
