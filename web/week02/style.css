@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(177, 220, 247);
+    background-color: rgb(177, 220, 247);   
+    color: navy; 
 }
 
   body, html {
@@ -8,9 +9,15 @@ body{
     font-family: Arial, Helvetica, sans-serif;
   }
   
+  header{
+    text-align: center;
+    font-size: 30px;
+    background-color: white;
+  }
+  
   .image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("lily.jpg");
-    height: 50%;
+    height: 40%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,7 +30,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(177, 220, 247)
+    color: white;
   }
   
   .text button {
@@ -76,9 +83,10 @@ body{
   }
 
   img{
-      margin-left: 35%;
+      margin-left: 30%;
       width: 300px;
       height: auto;
+      border: 5px solid  white;
   }
 
   p{
@@ -92,3 +100,18 @@ body{
       color: rgb(177, 220, 247);
       text-align: center;
   }
+
+  .pic{
+    float: left;
+    margin-left: 28%;
+    }
+
+ .row::after {
+    content: "";
+    clear: both;
+    display: table;
+   }
+
+   form{
+     text-align: right;
+   }
