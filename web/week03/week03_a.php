@@ -31,12 +31,7 @@
 <?php 
     $confirm =  $_POST["confirm"];
     $confirm = false;
-    if($confirm != true){
-    
-      echo "Your order has been canceled!";
-    }
-    else
-    {
+    if($confirm = true){
         ?>
         <form action="week03_b.php" method="POST">
         <div>
@@ -50,7 +45,7 @@
         <a href="week03.html">
         <button type="button"> Edit Order</button>
         </a>
-    </form>
+    </form>    
     <?php
     }
 ?>
