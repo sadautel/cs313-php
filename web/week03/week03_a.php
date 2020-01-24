@@ -9,13 +9,6 @@
        body{
         text-align: center;
         font-size:20px;
-        color: gold;
-        background-color: rgb(40, 146, 136);
-           
-       }
-       header{
-        color: gold;
-       }
     </style>
 </head>
 

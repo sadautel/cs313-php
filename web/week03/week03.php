@@ -111,8 +111,7 @@ echo " $";
 echo $_POST["total"]
 ?>
 
-<input type="submit" name="confirm" id="cfm" value="Continue Order" />
-<input type="submit" name="cancel" id="cnl" value="Cancel Order" />
+<input type="submit" name="confirm" id="cfm" value="Continue Order"/>
 </form>
 
 <a href="week03.html">
