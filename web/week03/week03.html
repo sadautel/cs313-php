@@ -2,17 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../index_style.css">
-    <title>CS 313 Assignment 03</title>
+    <meta name="veiwpoint" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 12</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>
-            Coming Soon!
-        </h1>
-    </header>
-    <a href="../index.html">Back to Assignments</a><br>
+  <header>
+    <h1> Doggy Chews</h1>
+    <h2>Skip the line at the theater and order online</h2>
+    <a href="../index.html"> CS213 Assignments</a>
+    <hr>
+  </header>
+
+    <form action="week03.php" method="POST">
+     
+
+      <div id="updateCost"> 
+           <label><b>Items to Purchase</b></label><br>
+            <img src="dogtoy01.jpg" alt="Code">
+            <input type="checkbox" name="item[]" id="item1" value="5.00" onclick="updateCost(this);">Crinkley Plush
+            <img src="dogtoy02.jpg" alt="Code">
+            <input type="checkbox" name="item[]" id="item2" value="5.50" onclick="updateCost(this);">Ropes
+            <img src="dogtoy03.jpg" alt="Code">
+            <input type="checkbox" name="item[]" id="item3" value="3.50" onclick="updateCost(this);">Balls<br>
+             
+            <br><img src="dogtoy04.jpg" alt="Code">
+            <input type="checkbox" name="item[]" id="item4" value="6.00" onclick="updateCost(this);">Teething Chew
+            <img src="dogtoy05.jpg" alt="Code">
+            <input type="checkbox" name="item[]" id="item5" value="4.00" onclick="updateCost(this);">Chewy 
+            <img src="dogtoy06.jpg" alt="Code">
+            <input type="checkbox" name="item[]" id="item6" value="4.50" onclick="updateCost(this);">Kong<br>
+
+            <br><img src="dogtoy07.jpg" alt="Code">
+            <input type="checkbox" name="item[]" id="item7" value="2.50" onclick="updateCost(this);">Squeaky Bones
+            <img src="dogtoy08.jpg" alt="Code">
+            <input type="checkbox" name="item[]" id="item8" value="2.00" onclick="updateCost(this);">Plushy
+            <img src="dogtoy09.jpg" alt="Code">
+            <input type="checkbox" name="item[]" id="item9" value="3.00" onclick="updateCost(this);">Squeaky Plushes<br>
+      </div>
+      <div>
+            <label for="total">Total:</label>
+            <input type="text" name="total" id="total">
+      </div>   
+      <input type="submit" id="sbt" value="Checkout" />
+      <input type="reset" onreset="reset"><br>
+      </div>
+    </form>
+
+    <script>           
+      function updateCost(el)
+      {
+        console.log(el.value);
+         var sum = 0;
+         var hold;
+         var elem
+         for(i = 1; i < 10; i++)
+         {
+            hold = "item" + i;
+            elem = document.getElementById(hold);
+            if(elem.checked == true)
+            {
+               sum = sum + Number(elem.value);
+            }
+            document.getElementById("total").value = sum.toFixed(2);
+          }
+       }
+    </script>
 </body>
-</html>

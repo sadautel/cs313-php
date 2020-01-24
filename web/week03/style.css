@@ -1,0 +1,16 @@
+body{
+    background-color: lightblue;
+}
+
+header{
+    background-color:  rgb(102, 13, 30);
+    color: white;
+    text-align: center;
+}
+
+img{
+    margin-left: 10%;
+    width: 200px;
+    height: 250px;
+    border: 5px solid  black;
+}
