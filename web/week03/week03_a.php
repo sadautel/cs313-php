@@ -42,10 +42,9 @@
         </div>
         <input type="submit" name="confirm" id="cfm" value="Submit Order" />
         <input type="submit" name="cancel" id="cnl" value="Cancel Order" />
-
-       <a href="week03.html">
-       <button type="button"> Edit Order</button>
-      </a>
+        <a href="week03.html">
+        <button type="button"> Edit Order</button>
+        </a>
     </form>
     <?php
     }

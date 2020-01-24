@@ -117,7 +117,9 @@ foreach($pItems as $selected)
 <br><label>Purchase total:</label>
 <?php 
 echo " $";
-echo $_POST["total"]?>
+echo $_POST["total"]
+?>
+
 <input type="submit" name="confirm" id="cfm" value="Continue Order" />
 <input type="submit" name="cancel" id="cnl" value="Cancel Order" />
 </form>
