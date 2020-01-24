@@ -48,11 +48,6 @@
     </form>    
     <?php
     }
-    $cancel = $_POST["cancel"];
-    $cancel = true;
-    if($cancel = false){
-        echo "Your order has been cancelled!"
-    }
 ?>
 </body>
 </html>
