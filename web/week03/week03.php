@@ -122,7 +122,7 @@ echo $_POST["total"]?>
 <input type="submit" name="cancel" id="cnl" value="Cancel Order" />
 </form>
 
-<a href="/week03.html">
+<a href="week03.html">
 <button type="button"> Edit Order</button>
 </a>
 </body>
