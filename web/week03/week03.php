@@ -15,16 +15,6 @@
         margin-right: 30%;
        }
 
-       body{
-        font-size:20px;
-        color: gold;
-        background-color: rgb(40, 146, 136);
-           
-       }
-       header{
-        color: gold;
-       }
-
        link{
            text-align: center;
        }
@@ -42,7 +32,8 @@
     <hr>
 </h1>
 </header>
-
+<form action="week03_a.php" method="POST">
+<br><label>Selected Items:</label>
 <?php 
 $pItems = $_POST['item'];
 
