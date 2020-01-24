@@ -31,9 +31,14 @@
 <?php 
     $confirm =  $_POST["confirm"];
     $confirm = false;
-    if($confirm == true){
-    ?>
-    <form action="week03_b.php" method="POST">
+    if($confirm != true){
+    
+      echo "Your order has been canceled!";
+    }
+    else
+    {
+        ?>
+        <form action="week03_b.php" method="POST">
         <div>
           <p>Please enter your shipping address</p>
           <label for="address">Address:</label>
@@ -47,10 +52,6 @@
         </a>
     </form>
     <?php
-    }
-    else
-    {
-        echo "Your order has been canceled!";
     }
 ?>
 </body>
