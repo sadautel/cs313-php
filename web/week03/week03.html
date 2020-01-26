@@ -10,16 +10,13 @@
 <body>
   <header>
     <h1> Doggy Chews</h1>
-    <h2>Skip the line at the theater and order online</h2>
+    <h2>Toys For All Your Doggy Needs</h2>
     <a href="../index.html"> CS213 Assignments</a>
     <hr>
   </header>
 
     <form action="week03.php" method="POST">
-     
-
       <div id="updateCost"> 
-           <label><b>Items to Purchase</b></label><br>
             <img src="dogtoy01.jpg" alt="Code">
             <input type="checkbox" name="item[]" id="item1" value="5.00" onclick="updateCost(this);">Crinkley Plush
             <img src="dogtoy02.jpg" alt="Code">
@@ -41,13 +38,19 @@
             <img src="dogtoy09.jpg" alt="Code">
             <input type="checkbox" name="item[]" id="item9" value="3.00" onclick="updateCost(this);">Squeaky Plushes<br>
       </div>
+      <footer>
       <div>
+        <br>
             <label for="total">Total:</label>
             <input type="text" name="total" id="total">
-      </div>   
-      <input type="submit" id="sbt" value="Checkout" />
+      </div> 
+      <br>  
+      <input type="submit" id="sbt" value="Cart" />
       <input type="reset" onreset="reset"><br>
       </div>
+      <hr>
+      </footer>
+
     </form>
 
     <script>           
