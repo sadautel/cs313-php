@@ -31,7 +31,7 @@
           <label for="address">Zipcode:</label>
           <input type="text" name="zipcode">
         </div>
-        <input type="submit" name="confirm" id="cfm" value="Submit Order" />
+        <input type="submit" name="confirm" id="cfm" value="Complete Purchase" />
         <a href="week03.html">
         <button type="button"> Edit Order</button>
         </a>
