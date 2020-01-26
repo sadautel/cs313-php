@@ -20,8 +20,16 @@
     $confirm =  $_POST["confirm"];
     $confirm = false;
     if($confirm = true){
-        $ad = $_POST["address"];
-        echo $ad; 
+        $strAdd = $_POST["streetaddress"];
+        echo $strAdd; 
+        $strName = $_POST["streetname"];
+        echo $strName; ?><Br><?php
+        $city = $_POST["city"];
+        echo $city; . ", " 
+        $state = $_POST["state"];
+        echo $state;
+        $zip = $_POST["zipcode"];
+        echo $zip;
     }
 
 ?>

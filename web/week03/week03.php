@@ -32,7 +32,7 @@
     <hr>
 </h1>
 </header>
-<form action="week03_a.php" method="POST">
+<form action="week03_a.php, week03_b.php" method="POST">
 <br><label>Selected Items:</label>
 <?php 
 $pItems = $_POST['item'];
@@ -111,7 +111,7 @@ echo " $";
 echo $_POST["total"]
 ?>
 <br>
-<input type="submit" name="confirm" id="cfm" value="Continue Order"/>
+<input type="submit" name="confirm" id="cfm" value="Checkout"/>
 <a href="week03.html">
 <button type="button"> Edit Order</button>
 </a>

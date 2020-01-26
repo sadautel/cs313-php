@@ -29,9 +29,16 @@
         <form action="week03_b.php" method="POST">
         <div>
           <p>Please enter your shipping address</p>
-          <label for="address">Address:</label>
-          <textarea name="address" id="address" placeholder="Street address, city, state, and zip" required>
-        </textarea>
+          <label for="address">Street Address:</label>
+          <input type="text" name="streetaddress"><br>
+          <label for="address">Street Name:</label>
+          <input type="text" name="streetname"><br>
+          <label for="address">City:</label>
+          <input type="text" name="city"><br>
+          <label for="address">State:</label>
+          <input type="text" name="state"><br>
+          <label for="address">Zipcode:</label>
+          <input type="text" name="zipcode">
         </div>
         <input type="submit" name="confirm" id="cfm" value="Submit Order" />
         <a href="week03.html">
