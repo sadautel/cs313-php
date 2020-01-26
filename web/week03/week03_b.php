@@ -108,8 +108,6 @@ echo " $";
 echo $_POST["total"]
 ?>
 <br>
-
-?>
 </body>
 </html>
 

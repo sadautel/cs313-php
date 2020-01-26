@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 <style>
     form{
-        text-align: center;
+        margin-left: 33%;
     }
 </style>
 </head>
