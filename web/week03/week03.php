@@ -32,7 +32,7 @@
     <hr>
 </h1>
 </header>
-<form action="week03_a.php" action="week03_b.php" method="POST">
+<form action="week03_a.php" method="POST">
 <br><label>Selected Items:</label>
 <?php 
 $pItems = $_POST['item'];

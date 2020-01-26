@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="veiwpoint" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 12</title>
+    <title>Shipping Address</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <header>
 <h1>
-    Order Information
+    Shipping Address
     <hr>
 </h1>
 </header>
