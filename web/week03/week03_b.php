@@ -31,7 +31,6 @@
         $zip = $_POST["zipcode"];
         echo $zip;
     }
-
 ?>
 </body>
 </html>
