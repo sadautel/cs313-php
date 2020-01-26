@@ -8,7 +8,10 @@
 </head>
 <body>
  <br><label>Customer Address:</label>
- <?php echo $_POSt["address"]?>
+
+ <?php
+  $ad = $POST["address"]
+  echo $ad?>
 </body>
 </html>
 
