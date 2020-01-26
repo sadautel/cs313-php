@@ -110,13 +110,14 @@ foreach($pItems as $selected)
 echo " $";
 echo $_POST["total"]
 ?>
-
+<br>
 <input type="submit" name="confirm" id="cfm" value="Continue Order"/>
-</form>
-
 <a href="week03.html">
 <button type="button"> Edit Order</button>
 </a>
+</form>
+
+
 </body>
 </html>
 
