@@ -24,8 +24,14 @@
           <p>Please enter your shipping address</p>
           <label for="address">Street Address:</label>
           <input type="text" name="streetaddress"><br>
+          <label for="address">City:</label>
+          <input type="text" name="city"><br>
+          <label for="address">State:</label>
+          <input type="text" name="state"><br>
+          <label for="address">Zipcode:</label>
+          <input type="text" name="zipcode">
         </div>
-        <input type="submit" name="confirm" id="cfm" value="Complete Purchase">
+        <input type="submit" name="confirm" id="cfm" value="Complete Purchase" />
         <a href="week03.html">
         <button type="button"> Edit Order</button>
         </a>
