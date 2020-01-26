@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="veiwpoint" content="width=device-width, initial-scale=1.0">
-    <title>Order Information</title>
+    <title>Assignment 12</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -21,13 +20,13 @@
     $confirm =  $_POST["confirm"];
     $confirm = false;
     if($confirm = true){
-        $strAdd = htmlspecialchar($_POST["streetaddress"]);
+        $strAdd = $_POST["streetaddress"];
         echo $strAdd; 
-        $city = htmlspecialchar($_POST["city"]);
+        $city = $_POST["city"];
         echo $city; 
-        $state = htmlspecialchar($_POST["state"]);
+        $state = $_POST["state"];
         echo $state;
-        $zip = htmlspecialchar($_POST["zipcode"]);
+        $zip = $_POST["zipcode"];
         echo $zip;
     }
 ?>
