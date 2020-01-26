@@ -10,8 +10,9 @@
  <br><label>Customer Address:</label>
 
  <?php
-  $ad = $POST["address"]
-  echo $ad?>
+  $ad = $POST["address"];
+  echo $ad;
+  ?>
 </body>
 </html>
 
