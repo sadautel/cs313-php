@@ -6,8 +6,11 @@
     <title>Assignment 12</title>
     <link rel="stylesheet" href="style.css">
 <style>
-    form{
-        margin-left: 33%;
+    label{
+        margin-left: 30%;
+    }
+    input{
+        margin-left: 5%;
     }
 </style>
 </head>
@@ -31,8 +34,6 @@
           <p>Please enter your shipping address</p>
           <label for="address">Street Address:</label>
           <input type="text" name="streetaddress"><br>
-          <label for="address">Street Name:</label>
-          <input type="text" name="streetname"><br>
           <label for="address">City:</label>
           <input type="text" name="city"><br>
           <label for="address">State:</label>
