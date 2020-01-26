@@ -22,6 +22,8 @@
     if($confirm = true){
         $strAdd = $_POST["streetaddress"];
         echo $strAdd; 
+        $strName = $_POST["streetname"];
+        echo $strName; ?><Br><?php
         $city = $_POST["city"];
         echo $city; . ", " 
         $state = $_POST["state"];
@@ -29,7 +31,6 @@
         $zip = $_POST["zipcode"];
         echo $zip;
     }
-    
 
 ?>
 </body>
