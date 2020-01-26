@@ -5,6 +5,7 @@
     <meta name="veiwpoint" content="width=device-width, initial-scale=1.0">
     <title>Assignment 12</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -21,11 +22,11 @@
     $confirm = false;
     if($confirm = true){
         $strAdd = htmlspecialchar($_POST["streetaddress"]);
-        echo $strAdd; ?> <br><?php
+        echo $strAdd; 
         $city = htmlspecialchar($_POST["city"]);
-        echo $city; ?> <p>, </p> <?php
+        echo $city; 
         $state = htmlspecialchar($_POST["state"]);
-        echo $state; ?> <p>  </p> <?php
+        echo $state;
         $zip = htmlspecialchar($_POST["zipcode"]);
         echo $zip;
     }
