@@ -20,13 +20,13 @@
     $confirm =  $_POST["confirm"];
     $confirm = false;
     if($confirm = true){
-        $strAdd = $_POST["streetaddress"];
-        echo $strAdd; 
-        $city = $_POST["city"];
-        echo $city; 
-        $state = $_POST["state"];
-        echo $state;
-        $zip = $_POST["zipcode"];
+        $strAdd = htmlspecialchar($_POST["streetaddress"]);
+        echo $strAdd; ?> <br><?php
+        $city = htmlspecialchar($_POST["city"]);
+        echo $city; ?> <p>, </p> <?php
+        $state = htmlspecialchar($_POST["state"]);
+        echo $state; ?> <p>  </p> <?php
+        $zip = htmlspecialchar($_POST["zipcode"]);
         echo $zip;
     }
 ?>
