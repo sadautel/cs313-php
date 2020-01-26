@@ -31,7 +31,7 @@
         $zip = $_POST["zipcode"];
         echo $zip;
     }
-    <br><label>Selected Items:</label>
+  
 $pItems = $_POST['item'];
 
 foreach($pItems as $selected)
