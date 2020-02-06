@@ -2,7 +2,7 @@
    require "dbConnect.php";
    $db = get_db();
    $client_name = $db->prepare("SELECT * FROM client");
-   $client_name->execute();
+   $client_name->execute(); //Error is here
    while ($nRow = $client_name->fetch(PDO::FETCH_ASSOC))
    {
       $first_name = $nRow["first_name"];

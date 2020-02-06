@@ -2,46 +2,46 @@
 INSERT INTO client ( first_name
                     , last_name)
             VALUES ( 'Savannah'
-                    , 'Dautel';
+                    , 'Dautel');
 
 INSERT INTO client ( first_name
                     , last_name)
             VALUES ( 'Savie'
-                    , 'Dautel';
+                    , 'Dautel');
                     
 INSERT INTO client ( first_name
                     , last_name)
             VALUES ( 'Sue'
-                    , 'Dautel';
+                    , 'Dautel');
 
 
 INSERT INTO client_contact ( email
                            , phone_number)
                     VALUES ( 'example@gmail.com'
-                           , '801-530-9905';
+                           , '801-530-9905');
 
 INSERT INTO client_contact ( email
                            , phone_number)
                     VALUES ( 'example@gmail.com'
-                           , '801-533-9905';
+                           , '801-533-9905');
 
 INSERT INTO client_contact ( email
                            , phone_number)
                     VALUES ( 'example@gmail.com'
-                           , '801-533-9005';
+                           , '801-533-9005');
 
 
 INSERT INTO client_check_in ( check_in_date
                             , check_in_time)
                      VALUES ( '02/02/2020'
-                            , '1:20 pm';
+                            , '1:20 pm');
 
 INSERT INTO client_check_in ( check_in_date
                             , check_in_time)
                      VALUES ( '02/02/2020'
-                            , '1:25 pm';
+                            , '1:25 pm');
 
 INSERT INTO client_check_in ( check_in_date
                             , check_in_time)
                      VALUES ( '02/02/2020'
-                            , '1:30 pm';
+                            , '1:30 pm');

@@ -1,3 +1,4 @@
 \i delete.sql 
-\i create.sql
+\i myDb.sql
+\i insert.sql
 
