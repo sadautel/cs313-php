@@ -7,7 +7,7 @@
    {
       $first_name = $nRow["first_name"];
       $last_name = $nRow["last_name"];
-      echo "<p> Name: $first_name $last_name</p>";
+    
    }
 
    $client_contact = $db->prepare("SELECT * FROM client_contact");
@@ -16,7 +16,9 @@
    {
       $email = $cRow["email"];
       $phone_number = $cRow["phone_number"];
-      echo "<p> Contact: $phone_number <br> $email</p>";
+   
    }
+   echo "<p> Name: $first_name $last_name</p>";
+   echo "<p> Contact: $phone_number <br> $email</p>";
    ?>
 
