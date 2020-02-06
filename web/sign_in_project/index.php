@@ -24,7 +24,7 @@
        while ($iRow = $client_check_in->fetch(PDO::FETCH_ASSOC))
        {
           $check_in_date = $iRow["check_in_date "];
-          $check_in_time  = $iRow["check_in_time"];    
+           
        }
        echo "<p> Date and time: $check_in_date $check_in_time</p>"; 
 
