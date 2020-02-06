@@ -17,11 +17,11 @@
           $email = $cRow["email"];
           $phone_number = $cRow["phone_number"];   
       }
+
+      echo "<p> Name: $first_name $last_name</p>";
+      echo "<p> Contact: $phone_number <br> $email</p>";
    }
 
-  
-
-   echo "<p> Name: $first_name $last_name</p>";
-   echo "<p> Contact: $phone_number <br> $email</p>";
+ 
    ?>
 
