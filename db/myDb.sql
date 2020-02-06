@@ -10,11 +10,6 @@ CREATE TABLE client_contact
 , phone_number VARCHAR(100)  NOT NULL
 );
 
-CREATE TABLE client_check_in
-( id         SERIAL       NOT NULL PRIMARY KEY
-, check_in_date VARCHAR(100)  NOT NULL
-, check_in_time  VARCHAR(100)  NOT NULL
-);
 
 CREATE TABLE business_owner_sign_in
 ( id         SERIAL       NOT NULL PRIMARY KEY
