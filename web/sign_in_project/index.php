@@ -26,6 +26,13 @@
      
    }
    
+   echo "<p> Name: $first_name $last_name</p>";
+   echo "<p> Contact: $phone_number <br> $email</p>";
+   echo "<p> Date and time: $check_in_date $check_in_time</p>";
+
+   echo "<p> Name: $first_name $last_name</p>";
+   echo "<p> Contact: $phone_number <br> $email</p>";
+   echo "<p> Date and time: $check_in_date $check_in_time</p>";
  
    echo "<p> Name: $first_name $last_name</p>";
    echo "<p> Contact: $phone_number <br> $email</p>";
