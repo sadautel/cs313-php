@@ -16,6 +16,13 @@ CREATE TABLE client_check_in
 , check_in_time  VARCHAR(100)  NOT NULL
 );
 
+CREATE TABLE business_owner_sign_in
+( id         SERIAL       NOT NULL PRIMARY KEY
+, first_name VARCHAR(50)  NOT NULL
+, last_name  VARCHAR(50)  NOT NULL
+, b_password VARCHAR(100)  NOT NULL
+);
+
 CREATE TABLE business_view
 ( client_id INT NOT NULL REFERENCES client(id)
 , client_contact_id INT NOT NULL REFERENCES client_contact(id)
