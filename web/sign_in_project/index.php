@@ -15,17 +15,18 @@
        {
            $email = $cRow["email"];
            $phone_number = $cRow["phone_number"];
-            echo "<p> Contact: $phone_number <br> $email</p>";
+           
        }
+       echo "<p> Contact: $phone_number <br> $email</p>";
 
        $client_check_in = $db->prepare("SELECT * FROM client_check_in");
        $client_check_in->execute();
        while ($iRow = $client_check_in->fetch(PDO::FETCH_ASSOC))
        {
           $check_in_date = $iRow["check_in_date "];
-          $check_in_time  = $iRow["check_in_time"];
-          echo "<p> Date and time: $check_in_date $check_in_time</p>";     
+          $check_in_time  = $iRow["check_in_time"];    
        }
+       echo "<p> Date and time: $check_in_date $check_in_time</p>"; 
 
    }
 
