@@ -7,6 +7,7 @@
    {
       $first_name = $nRow["first_name"];
       $last_name = $nRow["last_name"];
+      echo "<p> Name: $first_name $last_name</p>";
    }
 
    $client_contact = $db->prepare("SELECT * FROM client_contact");
@@ -15,6 +16,7 @@
    {
       $email = $cRow["email"];
       $phone_number = $cRow["phone_number"];
+      echo "<p> Contact: $phone_number <br> $email</p>";
    }
 
    $client_check_in = $db->prepare("SELECT * FROM client_check_in");
@@ -23,20 +25,7 @@
    {
       $check_in_date = $iRow["check_in_date "];
       $check_in_time  = $iRow["check_in_time"];
-     
+      echo "<p> Date and time: $check_in_date $check_in_time</p>";     
    }
-   
-   echo "<p> Name: $first_name $last_name</p>";
-   echo "<p> Contact: $phone_number <br> $email</p>";
-   echo "<p> Date and time: $check_in_date $check_in_time</p>";
-
-   echo "<p> Name: $first_name $last_name</p>";
-   echo "<p> Contact: $phone_number <br> $email</p>";
-   echo "<p> Date and time: $check_in_date $check_in_time</p>";
- 
-   echo "<p> Name: $first_name $last_name</p>";
-   echo "<p> Contact: $phone_number <br> $email</p>";
-   echo "<p> Date and time: $check_in_date $check_in_time</p>";
-
    ?>
 
