@@ -18,7 +18,7 @@
         <?php
     }
     else{
-        echo "Thank you for signing in!"
+        echo "Thank you for signing in!";
     }
 
     ?>
