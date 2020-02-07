@@ -20,13 +20,14 @@
         <P> Thank you for signing in!</p>
         <?php
     }
-    else{
+    if($confirm != true){
         ?>
         <form action="index.php">
             <input type="text">
         </form>
         <?php
     }
+
     ?>
 </body>
 </html>
