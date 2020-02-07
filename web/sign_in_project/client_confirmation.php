@@ -8,8 +8,17 @@
 </head>
 <body>
     <?php
-     $owner =  $_POST["owner"];
-     $owner = false; 
+
+    $confirm =  $_POST["confirm"];
+    $confirm = false;
+    if($confirm = true){
+        ?>
+        <P> Thank you for signing in!</p>
+        <?php
+    }
+
+    $owner =  $_POST["owner"];
+    $owner = false;
     if($owner = true){
         ?>
         <form action="index.php">
@@ -17,10 +26,6 @@
         </form>
         <?php
     }
-    else{
-        echo "Thank you for signing in!";
-    }
-
     ?>
 </body>
 </html>
