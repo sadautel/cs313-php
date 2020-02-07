@@ -12,9 +12,7 @@
     $confirm =  $_POST["confirm"];
     $confirm = false;
 
-    if($confirm = true){
-        echo "Thank you for signing in!"
-    }
+   
 
     ?>
 </body>
