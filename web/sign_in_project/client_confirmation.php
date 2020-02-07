@@ -12,7 +12,15 @@
     $confirm =  $_POST["confirm"];
     $confirm = false;
 
- 
+    if($confirm = true){
+        ?>
+        <P> Thank you for signing in!</p>
+        <?php
+    }
+    else{
+        
+    }
+
     ?>
 </body>
 </html>
