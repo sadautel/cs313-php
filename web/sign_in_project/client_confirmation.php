@@ -9,20 +9,17 @@
 <body>
     <?php
 
-    $confirm =  $_POST["confirm"];
-    $confirm = false;
-    if($confirm = true){
-        ?>
-        <P> Thank you for signing in!</p>
-        <?php
-    }
+   //need to send info 
 
     $owner =  $_POST["owner"];
     $owner = false;
     if($owner = true){
         ?>
         <form action="index.php">
-            <input type="text">
+            First name: <input type="text">
+            Last name: <input type="text">
+
+            <input type="submit" name="owner" id="owner" value="Owner" />
         </form>
         <?php
     }
