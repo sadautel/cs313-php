@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(2, 98, 143);
+    color: white;
+}
+
+div{
+    margin-left: 1.8%;
+}
+
+header{
+    text-align: center;
+    border: solid white;
+    margin-bottom: 3%;
+}
+
+form{
+  text-align: center;
+}
+
+input.sbt{
+    margin-left: 2%;
+}

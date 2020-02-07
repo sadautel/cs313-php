@@ -12,10 +12,10 @@ INSERT INTO client_info ( first_name
                             , last_name
                             , email
                             , phone_number)
-                     VALUES ( 'Savannah'
+                     VALUES ( 'Suzie'
                             , 'Dautel'
                             , 'example@gmail.com'
-                            , '801-530-9905');
+                            , '801-530-9885');
 
 INSERT INTO client_info ( first_name
                             , last_name
