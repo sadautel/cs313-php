@@ -6,9 +6,6 @@ CREATE TABLE client_check_in
 , phone_number VARCHAR(100)  NOT NULL
 );
 
-CREATE TABLE check_in
-
-
 CREATE TABLE business_owner_sign_in
 ( id         SERIAL       NOT NULL PRIMARY KEY
 , first_name VARCHAR(50)  NOT NULL
