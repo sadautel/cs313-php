@@ -1,15 +1,15 @@
 <?php
    require "dbConnect.php";
    $db = get_db();
-  foreach ($db->query('SELECT * FROM client JOIN client_contact  on (client_contact_id') as $row)
+  foreach ($db->query('SELECT * FROM client_check_in') as $row)
 {
    $first_name = $row["first_name"];
    $last_name = $row["last_name"];
-   $email = $cRow["email"];
-   $phone_number = $cRow["phone_number"];
+   $email = $row["email"];
+   $phone_number = $row["phone_number"];
 }
-echo "<p> Name: $first_name $last_name</p>";
-echo "<p> Contact: $phone_number <br> $email</p>";
+  echo "<p> Name: $first_name $last_name</p>";
+  echo "<p> Contact: $phone_number <br> $email</p>";
    
    ?>
 
