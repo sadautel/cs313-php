@@ -16,11 +16,16 @@
     $owner = false;
     if($owner = true){
         ?>
+       <header>
+        <h1>
+            Please Sign in
+        </h1>
+    </header>
         <form action="index.php">
             First name: <input type="text"><br>
             Last name: <input type="text"><br>
 
-            Password: <input type="text"><br>
+            Password: <input type="text"><br><br>
 
             <input type="submit" name="owner" id="owner" value="Owner" />
         </form>
