@@ -8,25 +8,23 @@
 </head>
 <body>
     <?php
-
+     $owner =  $_POST["owner"];
+     $owner = false;
+ 
     $confirm =  $_POST["confirm"];
-    $confirm = false;
-
-    $owner =  $_POST["owner"];
-    $owner = false;
-
-    
+    $confirm = false;    
     if($owner = true){
-        if($confirm = true){
-            ?>
-            <P> Thank you for signing in!</p>
-            <?php
-        }
         ?>
         <form action="index.php">
             <input type="text">
         </form>
         <?php
+
+       if($confirm = true){
+       ?>
+          <P> Thank you for signing in!</p>
+       <?php  
+       }
     }
 
     ?>
