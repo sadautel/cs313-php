@@ -1,7 +1,7 @@
 <?php
    require "dbConnect.php";
    $db = get_db();
-  foreach ($db->query('SELECT * FROM client_check_in') as $row)
+  foreach ($db->query('SELECT * FROM client_info') as $row)
 {
    $first_name = $row["first_name"];
    $last_name = $row["last_name"];
