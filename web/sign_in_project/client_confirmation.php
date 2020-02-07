@@ -17,6 +17,9 @@
         </form>
         <?php
     }
+    else{
+        echo "Thank you for signing in!"
+    }
 
     ?>
 </body>
