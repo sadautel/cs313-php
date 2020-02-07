@@ -9,22 +9,13 @@
 <body>
     <?php
      $owner =  $_POST["owner"];
-     $owner = false;
- 
-    $confirm =  $_POST["confirm"];
-    $confirm = false;    
+     $owner = false; 
     if($owner = true){
         ?>
         <form action="index.php">
             <input type="text">
         </form>
         <?php
-
-       if($confirm = true){
-       ?>
-          <P> Thank you for signing in!</p>
-       <?php  
-       }
     }
 
     ?>
