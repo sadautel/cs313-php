@@ -20,17 +20,13 @@
         <P> Thank you for signing in!</p>
         <?php
     }
-    elseif($owner = true){
+    if($owner = true){
         ?>
         <form action="index.php">
             <input type="text">
         </form>
         <?php
     }
-    else{
-
-    }
-
     ?>
 </body>
 </html>
