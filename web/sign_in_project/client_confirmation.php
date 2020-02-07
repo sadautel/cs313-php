@@ -15,16 +15,17 @@
     $owner =  $_POST["owner"];
     $owner = false;
 
-    if($confirm = false){
-       ?>
+    
+    if($owner = true){
+        if($confirm = true){
+            ?>
+            <P> Thank you for signing in!</p>
+            <?php
+        }
+        ?>
         <form action="index.php">
             <input type="text">
         </form>
-        <?php
-    }
-    else
-        ?>
-        <P> Thank you for signing in!</p>
         <?php
     }
 
