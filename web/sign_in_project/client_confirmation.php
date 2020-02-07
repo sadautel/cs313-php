@@ -26,10 +26,9 @@
 
         Password:      <input type="text"><br>
         <input type="submit" id="sbt" value="Submit" />
-
         </form>
+        <?php
     }
-
     ?>
 </body>
 </html>
