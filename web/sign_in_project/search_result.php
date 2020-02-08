@@ -12,16 +12,23 @@
 <?php
 require "dbConnect.php";
 $db = get_db();
+mysqli_select_db("tutorohx_rw", $conncection);
+
 $valueToSearch = $_POST['valueToSearch'];
 
-$db = "SELECT * FROM user WHERE f_name=$valueToSearch ";
-$result = $db;
+$sql = "SELECT * FROM user WHERE f_name=$valueToSearch ";
+$result = mysqli_query($sql, $connection);
+
+?>
+
+<?php
 
 if ($result)
  {
-  while($row = db($result))
+  while($row = mysqli_fetch_array($result))
  {
 
+?>
 ?>
 <table>
 <tr><th>ID</th><th>First Name</th><th>Last Name</th></tr>
