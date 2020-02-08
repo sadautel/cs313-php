@@ -5,9 +5,22 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" href="style.css">
+   <style>
+      body{
+         text-align: center;
+      }
+   </style>
    <title>Document</title>
 </head>
 <body>
+
+<header>
+<form action="search_result.php" method="post" >
+<input type="text" name="valueToSearch" placeholder="Search Record.."></br>
+<input type="submit" name="search" value="Search Record..">
+</form>
+</header>
+
 <?php
    require "dbConnect.php";
    $db = get_db();
