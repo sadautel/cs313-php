@@ -18,19 +18,11 @@ $search = $db->prepare("SELECT *  client_info WHERE first_name = $valueToSearch 
 $search->execute();
 while ($row = $search->fetch(PDO::FETCH_ASSOC))
 {
-   $first_name = $fRow["first_name"];
-   $last_name = $fRow["last_name"];
+   echo = $row["first_name"];
+   echo = $row["last_name"];
 }
 
-?>
-<table>
-<tr><th>ID</th><th>First Name</th><th>Last Name</th></tr>
-<tr>
-<td><?php echo $row["first_name"]; ?></td>
-<td><?php echo $row["last_name"]; ?></td>
-</tr>
-</table>
-    
+?>    
 </body>
 </html>
 
