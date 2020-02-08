@@ -13,8 +13,8 @@
 require "dbConnect.php";
 $db = get_db();
 $valueToSearch = $_POST['valueToSearch'];
-$db = "SELECT * FROM client_info WHERE first_name = $valueToSearch ";
-$result = $db;
+$search = $db->prepare("SELECT *  client_info WHERE first_name = $valueToSearch ");
+$result = $search;
 
 if ($result)
  {
