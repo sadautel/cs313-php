@@ -14,15 +14,16 @@
 require "dbConnect.php";
 $db = get_db();
 $valueToSearch = $_POST['valueToSearch'];
+$search = $db->prepare("SELECT * FROM client_info WHERE client_info = $valueToSearch ");
 
-foreach ($db->query('SELECT * FROM client_info') = $valueToSearch as $row)
+while ($row = $search->fetch(PDO::FETCH_ASSOC))
 {
    $first_name = $row["first_name"];
    $last_name = $row["last_name"];
- 
+}
+echo $first_name;
+echo $last_name;
 
-   echo "<p> Client: $first_name  $last_name </p>";
-}   
 ?>
 </body>
 </html>
