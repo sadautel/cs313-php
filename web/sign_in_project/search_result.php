@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    
     <title>Document</title>
 </head>
 <body>
@@ -12,23 +12,15 @@
 <?php
 require "dbConnect.php";
 $db = get_db();
-mysqli_select_db("tutorohx_rw", $conncection);
-
 $valueToSearch = $_POST['valueToSearch'];
-
-$sql = "SELECT * FROM user WHERE f_name=$valueToSearch ";
-$result = mysqli_query($sql, $connection);
-
-?>
-
-<?php
+$db = "SELECT * FROM client_info WHERE first_name = $valueToSearch ";
+$result = $db;
 
 if ($result)
  {
-  while($row = mysqli_fetch_array($result))
+  while($row = db($result))
  {
 
-?>
 ?>
 <table>
 <tr><th>ID</th><th>First Name</th><th>Last Name</th></tr>
