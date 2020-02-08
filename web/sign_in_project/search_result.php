@@ -10,23 +10,24 @@
 <body>
 
 <?php
+
 require "dbConnect.php";
 $db = get_db();
 $valueToSearch = $_POST['valueToSearch'];
 $search = $db->prepare("SELECT *  client_info WHERE first_name = $valueToSearch ");
-$result = $search;
-
-if ($result)
- {
-  while($row = db($result))
- {
+$search->execute();
+while ($row = $search->fetch(PDO::FETCH_ASSOC))
+{
+   $first_name = $fRow["first_name"];
+   $last_name = $fRow["last_name"];
+}
 
 ?>
 <table>
 <tr><th>ID</th><th>First Name</th><th>Last Name</th></tr>
 <tr>
-<td><?php echo $row["f_name"]; ?></td>
-<td><?php echo $row["l_name"]; ?></td>
+<td><?php echo $row["first_name"]; ?></td>
+<td><?php echo $row["last_name"]; ?></td>
 </tr>
 </table>
     
