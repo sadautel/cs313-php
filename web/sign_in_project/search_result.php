@@ -21,7 +21,7 @@ while ($row = $search->fetch(PDO::FETCH_ASSOC))
    $first_name = $row["first_name"];
    $last_name = $row["last_name"];
 }
-echo "Client: " $first_name $last_name;
+echo "Client: $first_name $last_name";
 
 ?>
 </body>
