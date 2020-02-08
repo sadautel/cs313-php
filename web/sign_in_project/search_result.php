@@ -21,17 +21,12 @@ while ($row = $search->fetch(PDO::FETCH_ASSOC))
    $first_name = $row["first_name"];
    $last_name = $row["last_name"];
 
+   echo $first_name;
+   echo $last_name;
+
 }
 
 ?>
-<table>
-<tr><th>ID</th><th>First Name</th><th>Last Name</th></tr>
-<tr>
-<td><?php echo $first_name; ?></td>
-<td><?php echo $last_name; ?></td>
-</tr>
-</table>
-    
 </body>
 </html>
 
