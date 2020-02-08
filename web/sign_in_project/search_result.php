@@ -15,7 +15,7 @@ require "dbConnect.php";
 $db = get_db();
 $valueToSearch = $_POST['valueToSearch'];
 
-foreach ($db->query('SELECT * FROM client_info  WHERE client_info = $valueToSearch') as $row)
+foreach ($db->query('SELECT * FROM client_info  WHERE first_name = valueToSearch') as $row)
 {
    $first_name = $row["first_name"];
    $last_name = $row["last_name"];
