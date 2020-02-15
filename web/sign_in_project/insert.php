@@ -26,7 +26,7 @@ catch (Exception $ex)
 	echo "Error with DB. Details: $ex";
 	die();
 }
-header("Location: index.php");
+header("Location: index.php/?personId=$client_info_Id");
 
 die();
 ?>

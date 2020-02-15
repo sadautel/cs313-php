@@ -27,12 +27,16 @@
 
    require "dbConnect.php";
    $db = get_db();
-  foreach ($db->query('SELECT * FROM client_info') as $row)
-{
-   $first_name = $row["first_name"];
-   $last_name = $row["last_name"];
-   $email = $row["email"];
-   $phone_number = $row["phone_number"];
+   $personId = $_GET['personId'];
+   $statement = $db->prepare('SELECT * FROM clint_info WHERE Id = :personId');
+   $statement->bindValue(':personId', $personId);
+   $statement->execute();
+   while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+   {
+      $first_name = $row["first_name"];
+      $last_name = $row["last_name"];
+      $email = $row["email"];
+      $phone_number = $row["phone_number"];
 
    echo "<p> Client: $first_name  $last_name <br> 
                      $phone_number <br> $email</p>";
