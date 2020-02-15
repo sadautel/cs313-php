@@ -1,37 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <?php
+<?php
 
-   //need to send info 
+require("dbConnect.php");
+$db = get_db();
 
-    $owner =  $_POST["owner"];
-    $owner = false;
-    if($owner = true){
-        ?>
-       <header>
-        <h1>
-            Please Sign in
-        </h1>
-    </header>
-        <form action="index.php">
-            First name: <input type="text"><br>
-            Last name: <input type="text"><br>
+$first = $_POST['first_name'];
+$last = $_POST['last_name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
 
-            Password: <input type="text"><br><br>
+try
+{
+	$query = 'INSERT INTO client_info (first_name, last_name, email, phone_number) VALUES (:first, :last, :email, :phone)';
+	$statement = $db->prepare($query);
+	$statement->bindValue(':first', $first);
+	$statement->bindValue(':last', $last);
+   $statement->bindValue(':email', $email);
+   $statement->bindValue(':phone', $phone);
+	$statement->execute();
+	
+	// SELECT c.relname FROM pg_class c WHERE c.relkind = 'S';   -- display all sequences
+	// get id of last inserted row - save in $userId
 
-            <input type="submit" name="owner" id="owner" value="Owner" />
-        </form>
-        <?php
-    }
-    ?>
-</body>
-</html>
+}
+catch (Exception $ex)
+{
+	echo "Error with DB. Details: $ex";
+	die();
+}
+header("Location: index.php");
 
+die();
+?>

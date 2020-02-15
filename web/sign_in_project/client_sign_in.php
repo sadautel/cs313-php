@@ -13,10 +13,6 @@
             Please Sign in
         </h1>
     </header>
-<?php
-	require("dbConnect.php");
-	$db = get_db();
-?>
 <body>
 <form action="client_confirmation.php" method="POST">
         First name:    <input type="text" name="first_name"><br>
@@ -26,20 +22,8 @@
         Phone:  <input type="text" name="phone"><br>
         </div>
         <br><br>
-                     <?php
-                        $statement = $db->prepare("SELECT * FROM clinet_info");
-                        $statement->execute();
-                        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-                        {
-                           $id   = $row['id'];
-                           $ $first_name = $row["first_name"];
-                           $last_name = $row["last_name"];
-                           $email = $row["email"];
-                           $phone_number = $row["phone_number"];
-                        }
-                     ?>
-        <button type="submit" name="confirm" id="cfm" value="Sign in"></button>
-        <button type="submit" name="owner" id="owner" value="Owner"></button>
+        <input type="submit" name="confirm" id="cfm" value="Sign in" />
+        <input type="submit" name="owner" id="owner" value="Owner" />
       </form>
 </body>
 </html>
