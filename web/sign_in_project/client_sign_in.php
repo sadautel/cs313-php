@@ -15,24 +15,6 @@
     </header>
 <body>
 <form action="client_confirmation.php" method="POST">
-<?php 
-$input = $_POST["title"];
-
-foreach($input as $selected)
-{
-    if($input = "owner")
-    { 
-        ?>
-        First name:    <input type="text" name="first_name"><br>
-        Last name:     <input type="text" name="last_name"><br>
-        Password:     <input type="text" name="password"><br>
-        <input type="submit" name="confirm" id="cfm" value="Sign in" />
-        <?php
-    }
-
-    if($input = "client")
-    {
-        ?>
         First name:    <input type="text" name="first_name"><br>
         Last name:     <input type="text" name="last_name"><br>
         <div>
@@ -40,12 +22,8 @@ foreach($input as $selected)
         Phone:  <input type="text" name="phone"><br>
         </div>
         <br><br>
-        <input type="submit" name="submit" id="cfm" value="submit" />
-      <?php
-    }
-}
-
-?>
-</form>
+        <input type="submit" name="confirm" id="cfm" value="Sign in" />
+        <input type="submit" name="owner" id="owner" value="Owner" />
+      </form>
 </body>
 </html>
