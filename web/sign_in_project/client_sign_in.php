@@ -16,7 +16,7 @@
 <body>
 <form action="client_confirmation.php" method="POST">
 <?php 
-$input = $_GET["title"];
+$input = $_POST["title"];
 
 foreach($input as $selected)
 {
@@ -30,7 +30,8 @@ foreach($input as $selected)
         <?php
     }
 
-    if($input = "client"){
+    if($input = "client")
+    {
         ?>
         First name:    <input type="text" name="first_name"><br>
         Last name:     <input type="text" name="last_name"><br>
