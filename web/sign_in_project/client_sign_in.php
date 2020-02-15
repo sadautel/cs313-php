@@ -40,8 +40,8 @@
                         }
                      ?>
                   </select>
-        <input type="submit" name="confirm" id="cfm" value="Sign in" />
-        <input type="submit" name="owner" id="owner" value="Owner" />
+         <button type="submit" name="confirm" id="cfm">Sign in</button>
+         <button type="submit" name="owner" id="owner" >Owner</button>
       </form>
 </body>
 </html>
