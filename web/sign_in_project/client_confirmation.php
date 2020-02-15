@@ -1,5 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
 <?php
-
 require("dbConnect.php");
 $db = get_db();
 
@@ -18,10 +26,7 @@ try
     $statement->bindValue(':phone', $phone);
 	$statement->execute();
 	
-	// SELECT c.relname FROM pg_class c WHERE c.relkind = 'S';   -- display all sequences
-    // get id of last inserted row - save in $userId
     $userId = $db->lastInsertId("client_info_id_seq");
-
 }
 catch (Exception $ex)
 {
@@ -32,3 +37,8 @@ header("Location: index.php/?personId=$userId");
 
 die();
 ?>
+</body>
+</html>
+
+<?php
+
