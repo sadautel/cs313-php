@@ -1,11 +1,12 @@
 <?php
+
+require("dbConnect.php");
+$db = get_db();
+
 $first = $_POST['first_name'];
 $last = $_POST['last_name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
-
-require("dbConnect.php");
-$db = get_db();
 
 try
 {
