@@ -24,6 +24,7 @@
 </header>
 
 <?php
+
    require "dbConnect.php";
    $db = get_db();
   foreach ($db->query('SELECT * FROM client_info') as $row)
