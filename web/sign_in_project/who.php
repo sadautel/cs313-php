@@ -7,6 +7,11 @@
     <title>Sign in</title>
 </head>
 <body>
+<header>
+        <h1>
+            Please Select One
+        </h1>
+    </header>
 <form action="client_sign_in.php" method="POST">
        <input type="radio" name="title" value="owner" checked> Owner<br>
        <input type="radio" name="title" value="client"> Client<br>
