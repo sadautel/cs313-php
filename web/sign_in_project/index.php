@@ -27,9 +27,8 @@
 
    require "dbConnect.php";
    $db = get_db();
-   $personId = $_GET['personId'];
-   $statement = $db->prepare('SELECT * FROM clint_info WHERE Id = :personId');
-   $statement->bindValue(':personId', $personId);
+ 
+   $statement = $db->prepare('SELECT * FROM clint_info');
    $statement->execute();
    while ($row = $statement->fetch(PDO::FETCH_ASSOC))
    {
