@@ -26,6 +26,20 @@
         Phone:  <input type="text" name="phone"><br>
         </div>
         <br><br>
+                  <select name="client_input">
+                     <?php
+                        $statement = $db->prepare("SELECT * FROM clinet_info");
+                        $statement->execute();
+                        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+                        {
+                           $id   = $row['id'];
+                           $ $first_name = $row["first_name"];
+                           $last_name = $row["last_name"];
+                           $email = $row["email"];
+                           $phone_number = $row["phone_number"];
+                        }
+                     ?>
+                  </select>
         <input type="submit" name="confirm" id="cfm" value="Sign in" />
         <input type="submit" name="owner" id="owner" value="Owner" />
       </form>
