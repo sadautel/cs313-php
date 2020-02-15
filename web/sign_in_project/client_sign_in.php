@@ -36,12 +36,10 @@
                            $last_name = $row["last_name"];
                            $email = $row["email"];
                            $phone_number = $row["phone_number"];
-
-                    
                         }
                      ?>
-        <input type="submit" name="confirm" id="cfm" value="Sign in" />
-        <input type="submit" name="owner" id="owner" value="Owner" />
+        <button type="submit" name="confirm" id="cfm" value="Sign in"></button>
+        <button type="submit" name="owner" id="owner" value="Owner"></button>
       </form>
 </body>
 </html>
