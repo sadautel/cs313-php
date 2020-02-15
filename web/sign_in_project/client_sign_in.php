@@ -22,7 +22,6 @@
         </div>
         <br><br>
         <input type="submit" name="confirm" id="cfm" value="Sign in" />
-        <input type="submit" name="owner" id="owner" value="Owner" />
       </form>
 </body>
 </html>

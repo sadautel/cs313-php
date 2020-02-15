@@ -10,7 +10,7 @@
          text-align: center;
       }
    </style>
-   <title>Document</title>
+   <title>Client Info</title>
 </head>
 <body>
 
