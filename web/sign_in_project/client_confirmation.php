@@ -8,6 +8,15 @@
 </head>
 <body>
 <?php
+$confirm = $_POST["confirm"];
+$submit = $_POST["submit"];
+$submit = false;
+
+if($submit = true){
+    echo "Thank you for signing in!"
+}
+else{
+
 require("dbConnect.php");
 $db = get_db();
 
@@ -36,6 +45,7 @@ catch (Exception $ex)
 header("Location: index.php/?personId=$userId");
 
 die();
+}
 ?>
 </body>
 </html>
