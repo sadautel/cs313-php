@@ -14,7 +14,7 @@
 require "dbConnect.php";
 $db = get_db();
 $valueToSearch = $_POST['valueToSearch'];
-$search = $db->prepare("SELECT * FROM client_info WHERE client_info = $valueToSearch ");
+$search = $db->prepare("SELECT * FROM client_info WHERE client_info = \'$valueToSearch\'");
 
 while ($row = $search->fetch(PDO::FETCH_ASSOC))
 {
