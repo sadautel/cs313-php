@@ -14,12 +14,13 @@ try
 	$statement = $db->prepare($query);
 	$statement->bindValue(':first', $first);
 	$statement->bindValue(':last', $last);
-   $statement->bindValue(':email', $email);
-   $statement->bindValue(':phone', $phone);
+    $statement->bindValue(':email', $email);
+    $statement->bindValue(':phone', $phone);
 	$statement->execute();
 	
 	// SELECT c.relname FROM pg_class c WHERE c.relkind = 'S';   -- display all sequences
-	// get id of last inserted row - save in $userId
+    // get id of last inserted row - save in $userId
+    $userId = $db->lastInsertId("client_info_id_seq");
 
 }
 catch (Exception $ex)
@@ -27,7 +28,7 @@ catch (Exception $ex)
 	echo "Error with DB. Details: $ex";
 	die();
 }
-header("Location: index.php");
+header("Location: index.php/?personId=$userId");
 
 die();
 ?>
