@@ -42,8 +42,11 @@
    echo "<p> Client: $first_name  $last_name <br> 
                      $phone_number <br> $email</p>";
 }   
-   ?>
+echo "<p> Client: $first_name  $last_name <br> 
+$phone_number <br> $email</p>";
+?>
 </body>
+
 </html>
 
 
