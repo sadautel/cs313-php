@@ -32,7 +32,7 @@ echo $valueToSearch;
 
 // }
 
-$personId = $_GET['personId'];
+$personId = 1;
 $statement = $db->prepare('SELECT * FROM w6_user WHERE Id = :personId');
 $statement->bindValue(':personId', $personId);
 $statement->execute();
