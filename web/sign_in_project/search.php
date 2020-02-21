@@ -17,6 +17,7 @@ $valueToSearch = $_POST['valueToSearch'];
 $search = $db->prepare("SELECT * FROM client_info WHERE first_name = :value");
 $statement->bindValue(':value', $valueToSearch);
 $search->execute();
+echo "SELECT * FROM client_info WHERE first_name = \'$valueToSearch\'";
 while ($row = $search->fetch(PDO::FETCH_ASSOC))
 {
     $id = $row['id'];
