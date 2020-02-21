@@ -11,7 +11,25 @@
 
 <?php
 
-echo "TESTING";
+require "dbConnect.php";
+$db = get_db();
+$valueToSearch = $_POST['valueToSearch'];
+$search = $db->prepare("SELECT * FROM client_info WHERE first_name = :value");
+$statement->bindValue(':value', $valueToSearch);
+$search->execute();
+echo "SELECT * FROM client_info WHERE first_name = \'$valueToSearch\'";
+while ($row = $search->fetch(PDO::FETCH_ASSOC))
+{
+    $id = $row['id'];
+    $first_name = $row["first_name"];
+    $last_name = $row["last_name"];
+    $email = $row["email"];
+    $phone_number = $row["phone_number"];
+
+ echo "<p> Client: $first_name  $last_name <br> 
+                   $phone_number <br> $email</p>";
+
+}
 
 
 ?>
