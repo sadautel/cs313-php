@@ -13,7 +13,14 @@
             Please Sign in
         </h1>
     </header>
-<form action="client_confirmation.php" method="POST">
+<?php 
+$title = $POST_['title'];
+if($title = "owner"){
+    header("Location: owner.php");
+}
+else{
+?>
+    <form action="client_confirmation.php" method="POST">
         First name:    <input type="text" name="first_name"><br>
         Last name:     <input type="text" name="last_name"><br>
         <div>
@@ -23,5 +30,8 @@
         <br><br>
         <input type="submit" name="confirm" id="cfm" value="Sign in" />
       </form>
+<?php
+}
+?>
 </body>
 </html>
