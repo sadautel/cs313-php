@@ -14,7 +14,7 @@
 require "dbConnect.php";
 $db = get_db();
 $valueToSearch = $_POST['valueToSearch'];
-echo $valueToSearch;
+
 // $search = $db->prepare('SELECT * FROM client_info WHERE first_name = :value');
 // $statement->bindValue(':value', $valueToSearch);
 // $search->execute();
@@ -40,7 +40,10 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
    $id      = $row['id'];
    $first_name = $row["first_name"];
    $last_name = $row["last_name"];
-   echo "$first_name $last_name<br> ";
+   $email = $row["email"];
+   $phone_number = $row["phone_number"];
+   echo "$first_name $last_name<br> 
+         $email $phone_number <br>";
 }
 
 
