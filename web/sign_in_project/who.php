@@ -13,10 +13,8 @@
         </h1>
     </header>
 <form action="who_direct.php" method="POST">
-       <input type="radio" name="title" value="owner" checked> Owner<br>
-       <input type="radio" name="title" value="client"> Client<br>
-        <br><br>
-        <input type="submit" name="confirm" id="cfm" value="Submit" />
+       <input type="submit" name="owner" value="owner" checked> Owner<br>
+       <input type="submit" name="client" value="client"> Client<br>
       </form>
 </body>
 </html>

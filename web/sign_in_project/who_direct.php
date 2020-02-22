@@ -7,11 +7,16 @@
 </head>
 <body>
 <?php 
-$title = $POST_['title'];
-if($title = 'client'){
+$client = $POST_['client'];
+$owner = $POST_['owner'];
+
+$client = false;
+$owner = false;
+
+if($client = true){
     header("Location: client_sign_in.php"); 
 }
-if($title = 'owner'){
+if($owner = true){
     header("Location: owner.php");
 }
 ?>
