@@ -11,7 +11,7 @@ $title = $POST_['title'];
 if($title = 'client'){
     header("Location: client_sign_in.php"); 
 }
-elseif($title = 'owner'){
+if($title = 'owner'){
     header("Location: owner.php");
 }
 ?>
