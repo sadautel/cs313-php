@@ -39,8 +39,8 @@
       $email = $row["email"];
       $phone_number = $row["phone_number"];
 
-   echo "<p> Client: $first_name  $last_name <br> 
-                     $phone_number <br> $email</p>";
+   echo "<p> $first_name  $last_name <br> 
+             $phone_number <br> $email</p>";
 }   
 
 ?>
