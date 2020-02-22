@@ -12,7 +12,7 @@
             Please Select One
         </h1>
     </header>
-<form action="who_direct.php" method="POST">
+<form action="client_sign_in.php" method="POST">
        <input type="submit" name="owner" value="owner" checked> Owner<br>
        <input type="submit" name="client" value="client"> Client<br>
       </form>
