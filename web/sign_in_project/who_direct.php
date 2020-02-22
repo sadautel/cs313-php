@@ -8,11 +8,11 @@
 <body>
 <?php 
 $title = $POST_['title'];
-if($title = 'owner'){
-    header("Location: owner.php");
-}
-else{
+if($title = 'client'){
     header("Location: client_sign_in.php"); 
+}
+elseif($title = 'owner'){
+    header("Location: owner.php");
 }
 ?>
 </body>
