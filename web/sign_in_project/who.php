@@ -12,7 +12,7 @@
             Please Select One
         </h1>
     </header>
-<form action="client_sign_in.php" method="POST">
+<form action="who_direct.php" method="POST">
        <input type="radio" name="title" value="owner" checked> Owner<br>
        <input type="radio" name="title" value="client"> Client<br>
         <br><br>
