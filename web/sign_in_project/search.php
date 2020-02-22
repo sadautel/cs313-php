@@ -43,7 +43,8 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
    $email = $row["email"];
    $phone_number = $row["phone_number"];
    echo "$first_name $last_name<br> 
-         $email $phone_number <br>";
+         $email <br>
+         $phone_number <br>";
 }
 
 
