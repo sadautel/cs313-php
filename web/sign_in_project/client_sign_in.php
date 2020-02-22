@@ -13,7 +13,7 @@
             Please Sign in
         </h1>
     </header>
-    <form action="owner.php" method="POST">
+    <form action="client_confirmation.php" method="POST">
         First name:    <input type="text" name="first_name"><br>
         Last name:     <input type="text" name="last_name"><br>
         <div>
@@ -23,5 +23,6 @@
         <br><br>
         <input type="submit" name="confirm" id="cfm" value="Sign in" />
       </form>
+
 </body>
 </html>
