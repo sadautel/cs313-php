@@ -14,15 +14,14 @@
         </h1>
     </header>
 <?php
-$client = $POST_['client'];
+
 $owner = $POST_['owner'];
-$client = false;
 $owner = false;
 
 if($owner = true){
     header("Location: owner.php");
 }
-if($client = true){
+if($owner = false){
     ?>
     <form action="client_confirmation.php" method="POST">
         First name:    <input type="text" name="first_name"><br>
