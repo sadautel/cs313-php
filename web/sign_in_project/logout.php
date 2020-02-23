@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Logged Out</title>
 </head>
 <body>
 <?php
@@ -16,6 +16,6 @@
    header('Refresh: 2; URL = client_sign_in.php');
 ?>
 <br>
-Back to client sign in<a href = "owner_login.php">
+<a href = "owner_login.php">Client Sign In</a><br>
 </body>
 </html>
