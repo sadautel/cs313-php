@@ -8,7 +8,11 @@
     <title>Search Results</title>
 </head>
 <body>
+<header>
+Logout<a href = "logout.php" tite = "Logout">
+Back<a href = "owner.login.php" tite = "Back">
 
+</header>
 <?php
 
 require "dbConnect.php";
@@ -30,8 +34,6 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
          $phone_number <br> 
          $client_date  <br><br>";
 }
-
-
 ?>
 </body>
 </html>
