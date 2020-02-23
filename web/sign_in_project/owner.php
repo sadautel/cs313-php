@@ -4,17 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Sign in</title>
 </head>
 <body>
-<form action="index.php" method="POST">
-        First name:    <input type="text" name="first_name"><br>
-        Last name:     <input type="text" name="last_name"><br>
-        Password :     <input type="text" name="email"><br>
+<header>
+        <h1>
+            Please login
+        </h1>
+    </header>
 
-        <br><br>
-        <input type="submit" name="confirm" id="cfm" value="Sign in" />
-      </form>
-    
+
+    <?php
+            $msg = '';
+            
+            if (isset($_POST['login']) && !empty($_POST['username']) 
+               && !empty($_POST['password'])) {
+				
+               if ($_POST['username'] == 'project' && 
+                  $_POST['password'] == '1234') {
+                  $_SESSION['valid'] = true;
+                  $_SESSION['timeout'] = time();
+                  $_SESSION['username'] = 'project';
+                  
+                  echo 'You have entered valid use name and password';
+               }else {
+                  $msg = 'Wrong username or password';
+               }
+            }
+         ?>
+      
+      
+      <form action = "owner_login.php" method = "post">
+            <h4 class = "form-signin-heading"><?php echo $msg; ?></h4>
+            Username: <input type = "text" class = "form-control" 
+               name = "username" placeholder = "username = project" 
+               required autofocus></br>
+            Password: <input type = "password" class = "form-control"
+               name = "password" placeholder = "password = 1234" required><br>
+            <button class = "btn btn-lg btn-primary btn-block" type = "submit" 
+               name = "login">Login</button>
+         </form>
 </body>
 </html>

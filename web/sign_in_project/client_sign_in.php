@@ -21,8 +21,8 @@
         Phone:  <input type="text" name="phone"><br>
         </div>
         <br><br>
-        <input type="submit" name="time_in" onclick="getTime()" id="cfm" value="Sign in" />
+        <input type="submit" name="confirm" id="cfm" value="Sign in" />
       </form>
-
+ 
 </body>
 </html>

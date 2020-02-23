@@ -16,10 +16,10 @@
 
 <header>
 <br>
-<form action="search.php" method="POST" >
-<input type="text" name="valueToSearch" placeholder="Search Record.."></br>
-<input type="submit" name="search" value="Search Record..">
+<form action="owner.php" method="POST" >
+<input type="submit" name="search" value="Owner Login">
 </form>
+<h1>Thank you for signing in!</h1>
 <br>
 </header>
 
@@ -38,11 +38,9 @@
       $last_name = $row["last_name"];
       $email = $row["email"];
       $phone_number = $row["phone_number"];
-      $time_in = $row["time_in"];
 }   
 echo "<p> $first_name  $last_name <br> 
-$phone_number <br> $email <br>
-$time_in</p>";
+$phone_number <br> $email</p>";
 ?>
 </body>
 </html>
