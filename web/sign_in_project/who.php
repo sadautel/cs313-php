@@ -34,8 +34,7 @@
          ?>
       
       
-      <form action="client_sign_in.php" method="POST">
-            action = "<?php echo htmlspecialchars($_SERVER['PHP_SELF']); 
+      <form action = "<?php echo htmlspecialchars($_SERVER['PHP_SELF']); 
             ?>" method = "post">
             <h4 class = "form-signin-heading"><?php echo $msg; ?></h4>
             <input type = "text" class = "form-control" 
