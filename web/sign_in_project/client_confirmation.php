@@ -15,15 +15,17 @@ $first = $_POST['first_name'];
 $last = $_POST['last_name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
+$client_date = $_POST['client_date'];
 
 try
 {
-	$query = 'INSERT INTO client_info (first_name, last_name, email, phone_number) VALUES (:first, :last, :email, :phone)';
+	$query = 'INSERT INTO client_info (first_name, last_name, email, phone_number, client_date) VALUES (:first, :last, :email, :phone, :client_date)';
 	$statement = $db->prepare($query);
 	$statement->bindValue(':first', $first);
 	$statement->bindValue(':last', $last);
     $statement->bindValue(':email', $email);
     $statement->bindValue(':phone', $phone);
+    $statement->bindValue(':client_date', $client_date);
 	$statement->execute();
 	
     $userId = $db->lastInsertId("client_info_id_seq");

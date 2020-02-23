@@ -14,11 +14,12 @@
         </h1>
     </header>
     <form action="client_confirmation.php" method="POST">
-        First name:    <input type="text" name="first_name"><br>
-        Last name:     <input type="text" name="last_name"><br>
+        First name:    <input type="text" name="first_name" required><br>
+        Last name:     <input type="text" name="last_name" required><br>
         <div>
-        Email:  <input type="text" name="email"><br>
-        Phone:  <input type="text" name="phone"><br>
+        Email:  <input type="text" name="email" required><br>
+        Phone:  <input type="text" name="phone" required><br>
+        Date:  <input type="text" name="client_date" required><br>
         </div>
         <br><br>
         <input type="submit" name="confirm" id="cfm" value="Sign in" />

@@ -16,10 +16,10 @@
 
 <header>
 <br>
+<h1>Thank you for signing in!</h1>
 <form action="owner.php" method="POST" >
 <input type="submit" name="search" value="Owner Login">
 </form>
-<h1>Thank you for signing in!</h1>
 <br>
 </header>
 
@@ -38,9 +38,10 @@
       $last_name = $row["last_name"];
       $email = $row["email"];
       $phone_number = $row["phone_number"];
+      $client_date = $row["client_date"];
 }   
 echo "<p> $first_name  $last_name <br> 
-$phone_number <br> $email</p>";
+$phone_number <br> $email <br> $client_date</p>";
 ?>
 </body>
 </html>
