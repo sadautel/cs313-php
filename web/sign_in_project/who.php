@@ -24,7 +24,7 @@
                   $_POST['password'] == '1234') {
                   $_SESSION['valid'] = true;
                   $_SESSION['timeout'] = time();
-                  $_SESSION['username'] = 'tutorialspoint';
+                  $_SESSION['username'] = 'project';
                   
                   echo 'You have entered valid use name and password';
                }else {
