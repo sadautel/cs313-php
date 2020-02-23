@@ -34,7 +34,8 @@
          ?>
       
       
-      <form action = "owner_login.php" method = "post">
+      <form action = "owner_login.php <?php echo htmlspecialchars($_SERVER['PHP_SELF']); 
+            ?>" method = "post">
             <h4 class = "form-signin-heading"><?php echo $msg; ?></h4>
             Username: <input type = "text" class = "form-control" 
                name = "username" placeholder = "username = project" 
