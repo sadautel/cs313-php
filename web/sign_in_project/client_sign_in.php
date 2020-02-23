@@ -19,7 +19,7 @@
         <div>
         Email:  <input type="text" name="email" required><br>
         Phone:  <input type="text" name="phone" required><br>
-        Date:  <input type="text" name="client_date" required><br>
+        Date:   <input type="text" name="client_date" required><br>
         </div>
         <br><br>
         <input type="submit" name="confirm" id="cfm" value="Sign in" />
