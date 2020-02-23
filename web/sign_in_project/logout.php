@@ -13,6 +13,7 @@
    
    echo 'You have logged out';
    header('Refresh: 2; URL = client_sign_in.php');
+   <a href = "owner.login.php">
 ?>
 </body>
 </html>
