@@ -21,3 +21,19 @@ form{
 input.sbt{
     margin-left: 2%;
 }
+
+:link, a:visited {
+    background-color: white;
+    color: navy;
+    padding: 10px 20px;
+    border: solid navy;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px;
+  }
+  
+  a:hover, a:active {
+    background-color: navy;
+    color: white;
+  }
