@@ -11,30 +11,30 @@
 require("dbConnect.php");
 $db = get_db();
 
-getTime();
+
        function getTime()
        {
-        echo "Today is " . date("Y/m/d") . "<br>";
+        date("Y/m/d") . "<br>";
         date_default_timezone_set("America/Denver");
-        echo "The time is " . date("h:i:sa");
-       }; 
+        date("h:i:sa");
+       };   
 
 $first = $_POST['first_name'];
 $last = $_POST['last_name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
-$getTime  = $_POST['get'];
-$getTime = getTime();
+$time_in = $_POST['time_in'];
+$time_in = getTime();
 
 try
 {
-	$query = 'INSERT INTO client_info (first_name, last_name, email, phone_number, getTime) VALUES (:first, :last, :email, :phone, :getTime)';
+	$query = 'INSERT INTO client_info (first_name, last_name, email, phone_number, time_in) VALUES (:first, :last, :email, :phone, :time_in)';
 	$statement = $db->prepare($query);
 	$statement->bindValue(':first', $first);
 	$statement->bindValue(':last', $last);
     $statement->bindValue(':email', $email);
     $statement->bindValue(':phone', $phone);
-    $statement->bindValue(':getTime', $getTime);
+    $statement->bindValue(':time_in', $time_in);
 	$statement->execute();
 	
     $userId = $db->lastInsertId("client_info_id_seq");
