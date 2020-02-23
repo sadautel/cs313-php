@@ -10,7 +10,7 @@
 <body>
 <header>
 <a href="logout.php" title = "Logout">Logout</a><br>
-<a href="owner_login">Back</a><br>
+<a href="./owner_login">Back</a><br>
 </header>
 <?php
 
