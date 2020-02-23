@@ -38,9 +38,11 @@
       $last_name = $row["last_name"];
       $email = $row["email"];
       $phone_number = $row["phone_number"];
+      $time_in = $row["time_in"];
 }   
 echo "<p> $first_name  $last_name <br> 
-$phone_number <br> $email</p>";
+$phone_number <br> $email <br>
+$time_in</p>";
 ?>
 </body>
 </html>
