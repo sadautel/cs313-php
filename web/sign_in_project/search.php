@@ -9,7 +9,8 @@
 </head>
 <body>
 <header>
-Logout<a href = "logout.php" tite = "Logout">
+<a href="logout.php" title = "Logout">Logout</a><br>
+<a href="owner_login">Back</a><br>
 </header>
 <?php
 
