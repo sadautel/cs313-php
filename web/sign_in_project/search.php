@@ -25,10 +25,10 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
    $email = $row["email"];
    $phone_number = $row["phone_number"];
    $client_date = $row["client_date"];
-   echo "$first_name $last_name<br> 
+   echo "<br>$first_name $last_name<br> 
          $email <br>
          $phone_number <br> 
-         $client_date  <br>";
+         $client_date  <br><br>";
 }
 
 
