@@ -16,6 +16,6 @@
    header('Refresh: 2; URL = client_sign_in.php');
 ?>
 <br>
-<a href = "owner_login.php">Client Sign In</a><br>
+<a href = "client_sign_in.php">Client Sign In</a><br>
 </body>
 </html>
