@@ -15,11 +15,15 @@ const onRequest = (request, resonse) => {
     }
 
     else {
-        res.writeHead(404, {"Content-Type": "text/html"});
-        res.write('<h1>Error Page not found!</h1>');
-        res.end();
+        resonse.writeHead(404, {"Content-Type": "text/html"});
+        resonse.write('<h1>Page not found!</h1>');
+        resonse.end();
     }
 }
 var server = http.createServer(onRequest);
 server.listen(8888);
+
+console.log("http://localhost:8888/getData");
+console.log("http://localhost:8888/home");
+
 
